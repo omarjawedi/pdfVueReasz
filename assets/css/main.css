@@ -1,0 +1,52 @@
+@import "../fa-icons/style.css";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #4318ff;
+  --secondary: #11047a;
+  --info: #a3aed0;
+  --placeholder: #8f9bba;
+  --text: #1b2559;
+  --input: #f4f7fe;
+  --background: #f4f7fe;
+  --success: #16be1d;
+  --danger: #bb1f38;
+  --cancel: #f5f3ff;
+  --icon: #abb1bf;
+}
+
+.theme-light {
+  --background: #f4f7fe;
+  --text: #313131;
+}
+
+.theme-dark {
+  --background: #313131;
+  --text: #f8f8f8;
+}
+
+.p-loading {
+  animation: fa-spin 2s infinite linear;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.vue-pdf-embed__page {
+  background: #fff;
+}
